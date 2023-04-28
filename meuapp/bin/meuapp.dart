@@ -80,4 +80,40 @@ void main(List<String> arguments) {
   print(!varFalse);
 
   //lista
+
+  List<String> list = [];
+  //ou
+  List list2 = [];
+  //ou
+  var list3 = [];
+
+  print("Adicionando elementos a lista: ");
+  list.add("Joca");
+  list.add("Martin");
+  list.add("Cris");
+  list.add("Louis");
+  list2.add(10);
+  list2.add("Luca");
+
+  print(list);
+  print(list2);
+
+  print("Tamanho da lista 1: ");
+  print(list.length);
+  print("Tamanho da lista 2: ");
+  print(list2.length);
+
+  print("Removendo item da lista: ");
+  list.remove("Joca");
+  print(list);
+
+  //verifica se esta vazia ou nao
+  print(list.isEmpty);
+  print(list.isNotEmpty);
+
+  //verifica se valor contem na lista
+  print(list.contains("Louis"));
+
+  //inverter lista
+  print(list.reversed);
 }
